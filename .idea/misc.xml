@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.8 (FL_CL)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.7.12 (sftp://wtt@222.20.98.47:7049/data/wtt/.conda/envs/FL_CL_three/bin/python3.7)" project-jdk-type="Python SDK" />
+</project>
