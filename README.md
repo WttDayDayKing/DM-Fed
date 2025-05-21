@@ -53,9 +53,9 @@ Please load:
   - session 2:HLwbc
 ## Methods
 ### FCIL-M (Defult setting)
-We provide default configurations for FCIL on the Matek-19 dataset.  
-Such as: python train_FedCL.py --save_train_dir="/data/FL_CL" --save_test_dir="/data/FL_CL" 
-Please replace the “save_train_dir” and “save_test_dir” with your actual paths. Note that the directory structure should follow this format:
+We provide default configurations for FCIL on the Matek-19 dataset.    
+Such as: python train_FedCL.py --save_train_dir="/data/FL_CL" --save_test_dir="/data/FL_CL"   
+Please replace the “save_train_dir” and “save_test_dir” with your actual paths. Note that the directory structure should follow this format:  
 - FL_CL/
   - Matek-19/
     - train/
