@@ -137,7 +137,7 @@ def get_client_dict_dataset(args,current_task,pim_model_list,netglobals):
     else:
         ##
         #print(f"targets class:{set(trainset.targets)}")
-        user_groups = non_iid_dirichlet_sampling(current_task,trainset.targets,args.num_class,args.non_iid_prob_class, args.num_users, seed=100, alpha_dirichlet=args.alpha_dirichlet)
+        user_groups = non_iid_dirichlet_sampling(current_task,trainset.targets,args.num_class,args.non_iid_prob_class, args.num_users, seed=100, alpha_dirichlet=args.alpha_dirichlet,args)
     args.current_trainset=trainset
     args.current_user_groups=user_groups
     #args.task_cache_size[current_task]=math.floor((len(list(trainset.data))/11456)*args.server_all_cache_size)
