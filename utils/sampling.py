@@ -21,7 +21,7 @@ def iid_sampling(n_train, num_users, seed):
     return dict_users
 
 # 非独立同分布采样
-def non_iid_dirichlet_sampling(current_task,y_train, num_classes, p, num_users, seed, alpha_dirichlet):
+def non_iid_dirichlet_sampling(current_task,y_train, num_classes, p, num_users, seed, alpha_dirichlet,args):
     np.random.seed(seed)
     # 使用NumPy库中的随机模块生成二项分布样本的函数调用。Phi为二维数组，其中行为客户端，列为类别，即20个客户端，5个类，每个元素为0或者1，1代表客户端选择了该类，0代表客户端未选择该类。
     Phi = np.random.binomial(1, p, size=(num_users, num_classes))  # indicate the classes chosen by each client  指明每个客户端选择的类别
@@ -38,7 +38,7 @@ def non_iid_dirichlet_sampling(current_task,y_train, num_classes, p, num_users, 
     for class_i in range(num_classes):
         y_train = np.array(y_train)
         if current_task>0:
-            inc_class_i=class_i + current_task*num_classes+1
+            inc_class_i=class_i + current_task*num_classes+args.way
             all_idxs = np.where(y_train == inc_class_i)[0]
         else:
             all_idxs = np.where(y_train == class_i)[0]
