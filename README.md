@@ -64,30 +64,30 @@ Please replace the “save_train_dir” and “save_test_dir” with your actual
     - train/
     - test/
 ### FCIL-A
-1. Modify /utils/options.py:
-   save_train_dir
-   save_test_dir
-   dataset=Acevedo-20
-   session=3
-   task_num=3
-   n_classes=10
-   cl_step=3
-   dataset_name=Acevedo-20
-2. training
-   python train_FedCL.py
+1. Modify /utils/options.py:  
+   save_train_dir  
+   save_test_dir  
+   dataset=Acevedo-20  
+   session=3  
+   task_num=3  
+   n_classes=10  
+   cl_step=3  
+   dataset_name=Acevedo-20  
+2. training  
+   python train_FedCL.py  
 ### FCIL-H
-1. Modify /utils/options.py:
-   save_train_dir=your train set path
-   save_test_dir=your test set path
-   dataset=Labelled
-   session=3
-   task_num=3
-   n_classes=8
-   cl_step=3
-   dataset_name=Labelled
-   way=2
-3. training
-   python train_FedCL.py
+1. Modify /utils/options.py:  
+   save_train_dir=your train set path  
+   save_test_dir=your test set path  
+   dataset=Labelled  
+   session=3  
+   task_num=3  
+   n_classes=8  
+   cl_step=3  
+   dataset_name=Labelled  
+   way=2  
+3. training  
+   python train_FedCL.py  
 
 
 
